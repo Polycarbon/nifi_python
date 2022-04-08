@@ -4,14 +4,17 @@ pull zookeeper image
     sudo docker pull bitnami/zookeeper:latest
 
 setup zookeeper.env on each host
+
 ###Host 1
     ZOO_SERVER_ID=1
     ALLOW_ANONYMOUS_LOGIN=yes
     ZOO_SERVERS=data-node1:2888:3888,data-node2:2888:3888,data-node3:2888:3888
+
 ###Host 2
     ZOO_SERVER_ID=2
     ALLOW_ANONYMOUS_LOGIN=yes
     ZOO_SERVERS=data-node1:2888:3888,data-node2:2888:3888,data-node3:2888:3888
+
 ###Host 3
     ZOO_SERVER_ID=3
     ALLOW_ANONYMOUS_LOGIN=yes
